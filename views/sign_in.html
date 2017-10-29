@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+    <title>Smart Class Control</title>
+  
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    
+    <title>Smart Class Control</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+      <!-- Header -->
+  <header class="header" id="top">
+    <div class="text-vertical-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-4"></div>
+          <div class="col-xs-6 col-md-4">
+            <div class="login-box well">
+              <form class="form-inline" accept-charset="UTF-8" role="form" method="post" action="">
+                <table class="table table-condensed table-hover">
+                  <thead>
+                    <tr>
+                      <th colspan="3">
+                        <legend>Sign in</legend>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <div class="form-group">
+                        <td>
+                          <label for="username-email">Username</label>
+                        </td>
+                        <td>
+                          <input name="user_id" id="username-email" placeholder="Username" type="text" class="form-control" />
+                        </td>
+                        <td rowspan="2" style="vertical-align:middle;">
+                          <div class="form-group">
+                            <input type="submit" class="btn btn-dark btn-lg js-scroll-trigger" method="POST" action="/sign_in" value="Login" />
+                          </div>
+                        </td>
+                      </div>
+                    </tr>
+                    <tr>
+                      <div class="form-group">
+                        <td>
+                          <label for="password">Password</label>
+                        </td>
+                        <td>
+                          <input name="user_pw" id="password" placeholder="Password" type="password" class="form-control" />
+                        </td>
+                      </div>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <div class="form-group">
+                        <td colspan="3">
+                          <a href="" class="btn btn-default m-t-md">비밀번호 찾기</a>
+                          <a>/</a>
+                          <a href="/sign_up" class="btn btn-default m-t-md">회원가입</a>
+                      </div>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </form>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-4"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+    <script>
+        function sign_in(){
+            location.href = "/sign_in";
+        }
+
+        function sign_up(){
+            location.href = "/sign_up";
+        }
+    </script>
+  
+
+  </body>
+</html>

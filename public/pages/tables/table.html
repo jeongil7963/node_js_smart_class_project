@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Smart Room | Table</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="index.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>SR</b></span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>S</b>mart <b>R</b>oom</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+      <span class="sr-only">Toggle navigation</span>
+    </a>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-envelope-o"></i>
+          <span class="label label-success">5</span>
+        </a>
+              <ul class="dropdown-menu">
+                <li class="header">안 읽은 4개의 메세지</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../../dist/img/김종혁.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                    김종혁 학생
+                    <small><i class="fa fa-clock-o"></i> 5 분 전..</small>
+                  </h4>
+                        <p>OO관 506호 강의실이 너무 추워요!</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../../dist/img/이하나.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                    이하나 학생
+                    <small><i class="fa fa-clock-o"></i> 2 시간 전..</small>
+                  </h4>
+                        <p>OO관 401호 강의실 형광등이 안들어와요.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../../dist/img/이정원.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                    이정원 학생
+                    <small><i class="fa fa-clock-o"></i> 6 시간 전..</small>
+                  </h4>
+                        <p>OO관 201호 강의실 문이 잠겨있습니다 추워요.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../../dist/img/이하나.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                    이하나 학생
+                    <small><i class="fa fa-clock-o"></i> 어제..</small>
+                  </h4>
+                        <p>OO관 401호 강의실 3번째 형광등이 안들어옵니다.</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="../../dist/img/이정원.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                    이정원 학생
+                    <small><i class="fa fa-clock-o"></i> 이틀전..</small>
+                  </h4>
+                        <p>OO관 201호 강의실 문이 잠겨있습니다 열어주세요.</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">모든 메세지 보기</a></li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-bell-o"></i>
+          <span class="label label-warning">3</span>
+        </a>
+              <ul class="dropdown-menu">
+                <li class="header">3개의 알림이 있습니다.</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                  <i class="fa fa-users text-aqua"></i> OO관 101호 강의실이 열렸습니다.
+                </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                  <i class="fa fa-warning text-yellow"></i> OO관 105호 강의실 아무 반응이 없어 모든 전원을 차단합니다.
+                </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                  <i class="fa fa-users text-red"></i> OO관 502호 에어컨과 연결이 불안정합니다.
+                </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">모든 알림 보기</a></li>
+              </ul>
+            </li>
+            <!-- Tasks: style can be found in dropdown.less -->
+            <li class="dropdown tasks-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <i class="fa fa-flag-o"></i>
+          <span class="label label-danger">9</span>
+        </a>
+              <ul class="dropdown-menu">
+                <li class="header">연결된 9개의 목록</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                    가습기
+                    <small class="pull-right">46%</small>
+                  </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-aqua" style="width: 46%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">46% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                    에어컨
+                    <small class="pull-right">24 ℃</small>
+                  </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-green" style="width: 24%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">24℃ Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                    공기청정기
+                    <small class="pull-right">60%</small>
+                  </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                    LED 형광등 01
+                    <small class="pull-right">80%</small>
+                  </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">80% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <a href="#">모든 연결 목록 보기</a>
+                </li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <img src="../../dist/img/홍길동.jpg" class="user-image" alt="User Image">
+          <span class="hidden-xs">홍길동 교수</span>
+        </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="dist/img/홍길동.jpg" class="img-circle" alt="User Image">
+
+                  <p>
+                    홍길동 교수 - 컴퓨터공학과
+                    <small>Member since Nov. 2012</small>
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">강의실</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">연구실</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">메세지</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">프로필</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">로그아웃</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <!-- Control Sidebar Toggle Button -->
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="../../dist/img/홍길동.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>홍길동 교수</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> 온라인</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+            </button>
+          </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header"><i class="ion ion-android-menu"></i> &nbsp; Menu</li>
+          <li><a href="../../index.html"><i class="ion ion-home"></i> <span>Home</span></a></li>
+          <li class="treeview">
+            <a href="#">
+        <i class="ion ion-android-list"></i> <span>Data Chart</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+            <ul class="treeview-menu">
+              <li><a href="../charts/test.html"><i class="ion ion-arrow-graph-up-right"></i> Graph</a></li>
+              <li><a href="table.html"><i class="ion ion-ios-list-outline"></i> Table</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+        <i class="ion ion-android-options"></i> <span>Connect & Control</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+            <ul class="treeview-menu">
+              <li><a href="control.html"><i class="ion ion-ios-settings"></i> Control</a></li>
+              <li><a href="connect.html"><i class="ion ion-plus-circled"></i> Connect</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+        <i class="ion ion-android-chat"></i> <span>Communication</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+            <ul class="treeview-menu">
+              <li><a href="../single.html"><i class="ion ion-android-person"></i> Single & Group Chat</a></li>
+              <li><a href="../mailbox/mailbox.html"><i class="ion ion-android-mail"></i> Mail</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../calendar.html">
+        <i class="ion ion-calendar"></i> <span>Schedule</span>
+        <span class="pull-right-container">
+          <small class="label pull-right bg-red">3</small>
+          <small class="label pull-right bg-blue">17</small>
+        </span>
+      </a>
+          </li>
+          <li><a href="#"><i class="ion ion-android-settings"></i> <span>Setting</span></a></li>
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <h1>
+        Table
+        <small>Data</small>
+      </h1>
+        <ol class="breadcrumb">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="#"></a>Data Chart</li>
+          <li class="active">Table</li>
+        </ol>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+          <div class="col-xs-6">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs">
+                <li class="pull-left header"><i class="fa fa-inbox"></i> 온도</li>
+                <li class="dropdown pull-left">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">강의실 선택 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">강의실 201호</a></li>
+                    <li><a href="#">강의실 202호</a></li>
+                    <li><a href="#">강의실 302호</a></li>
+                    <li><a href="#">강의실 401호</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content no-padding">
+                <!-- Morris chart - Sales -->
+                <div class="chart tab-pane active" style="position: relative; height: 500px;">
+                  <iframe width="100%" height="106%" frameborder="0" src="https://app.ubidots.com/ubi/getchart/tfmBk8IpN6KJVZUzQ4TErn5PbfI"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col-xs-6">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs">
+                <li class="pull-left header"><i class="fa fa-inbox"></i> 습도</li>
+                <li class="dropdown pull-left">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">강의실 선택 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">강의실 201호</a></li>
+                    <li><a href="#">강의실 202호</a></li>
+                    <li><a href="#">강의실 302호</a></li>
+                    <li><a href="#">강의실 401호</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content no-padding">
+                <!-- Morris chart - Sales -->
+                <div class="chart tab-pane active" style="position: relative; height: 500px;">
+                  <iframe width="100%" height="106%" frameborder="0" src="https://app.ubidots.com/ubi/getchart/HaCJAiKJ4JVNaLEZXZLPDb-Io20"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col-xs-6">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs">
+                <li class="pull-left header"><i class="fa fa-inbox"></i> 미세먼지 농도</li>
+                <li class="dropdown pull-left">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">강의실 선택 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">강의실 201호</a></li>
+                    <li><a href="#">강의실 202호</a></li>
+                    <li><a href="#">강의실 302호</a></li>
+                    <li><a href="#">강의실 401호</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content no-padding">
+                <!-- Morris chart - Sales -->
+                <div class="chart tab-pane active" style="position: relative; height: 500px;">
+                  <iframe width="100%" height="106%" frameborder="0" src="https://app.ubidots.com/ubi/getchart/pgBOQ4yKJmC75OMoKxTQGv8eimU"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+
+          <div class="col-xs-6">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+              <!-- Tabs within a box -->
+              <ul class="nav nav-tabs">
+                <li class="pull-left header"><i class="fa fa-inbox"></i> 조도</li>
+                <li class="dropdown pull-left">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">강의실 선택 <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">강의실 201호</a></li>
+                    <li><a href="#">강의실 202호</a></li>
+                    <li><a href="#">강의실 302호</a></li>
+                    <li><a href="#">강의실 401호</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="tab-content no-padding">
+                <!-- Morris chart - Sales -->
+                <div class="chart tab-pane active" style="position: relative; height: 500px;">
+                  <iframe width="100%" height="106%" frameborder="0" src="https://app.ubidots.com/ubi/getchart/pgBOQ4yKJmC75OMoKxTQGv8eimU"></iframe>
+                </div>
+              </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+          </div>
+          <!-- /.col -->
+
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>버전</b> 1.0.0
+      </div>
+      <strong>Smart Room &copy; 2017 &nbsp;<a href="https://www.google.co.kr">Team A</a>.</strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Create the tabs -->
+      <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+        <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+        <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+      </ul>
+    </aside>
+    <!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- DataTables -->
+  <script src="../../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <!-- SlimScroll -->
+  <script src="../../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+  <!-- FastClick -->
+  <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+  <!-- page script -->
+  <script>
+    $(function() {
+      $('#example1').DataTable()
+      $('#example2').DataTable({
+        'paging': true,
+        'lengthChange': false,
+        'searching': false,
+        'ordering': true,
+        'info': true,
+        'autoWidth': false
+      })
+    })
+  </script>
+</body>
+
+</html>

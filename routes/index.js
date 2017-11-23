@@ -53,7 +53,9 @@ router.post('/sign_up', function(req, res){
   pw = req.body.user_pw;
   email = req.body.user_email;
   console.log("-------------------sign up-----------------");
-  connection.query('insert into users set ?,?,?',[id,pw,email], function(err, rows) {
+  var data = [id,pw,email];
+
+  connection.query('insert into users (user_id,user_pw,user_email) values (?,?,?)', data, function(err, rows) {
     res.redirect('/');
   });
 });
@@ -74,5 +76,12 @@ router.get('/users', function(req, res){
   });
 });
 
+router.get('/index',function(req,res){
+  res.render('index',{title: 'DashBoard'});
+});
 
-module.exports = router; 
+router.get('/index.html',function(req,res){
+  res.render('ds',{title: 'DashBoard'});
+});
+
+module.exports = router;
